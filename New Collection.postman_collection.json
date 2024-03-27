@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "6152c768-d356-4d82-90f8-4b642e761873",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16681705"
+	},
+	"item": [
+		{
+			"name": "criar conta",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "message",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"numeroConta\": 123,\r\n    \"cliente\": \"DIEGO TESTE 1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/contas"
+			},
+			"response": []
+		},
+		{
+			"name": "recuperar contas",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/contas"
+			},
+			"response": []
+		},
+		{
+			"name": "recuperar contas por id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/contas/1"
+			},
+			"response": []
+		},
+		{
+			"name": "criar transação",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"dataTransacao\": \"2024-03-25\",\r\n    \"nomeEstabelecimento\": \"Nome do Estabelecimento\",\r\n    \"valor\": 100.0,\r\n    \"valorParcela\": 50.0,\r\n    \"quantidadeParcelas\": 2,\r\n    \"contaCorrente\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/transacoes"
+			},
+			"response": []
+		}
+	]
+}
